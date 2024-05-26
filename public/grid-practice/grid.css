@@ -1,0 +1,33 @@
+.container{
+    background-color: rgb(246, 164, 164);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.item{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(209, 28, 28);
+    margin: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    align-self: center;
+}
+.item-1{
+    grid-area: 1/1/2/2;
+    color: white;
+}
+.item-2{
+    grid-area: 2/2/3/3;
+    background-color: aqua;
+}
+.item-3{
+   grid-area: 3/3/4/4;
+   background-color: greenyellow;
+}
+.item-4{
+   grid-area: 4/4/5/5;
+   background-color:black;
+   color: white;
+}
