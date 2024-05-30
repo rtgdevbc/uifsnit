@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements access</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* width: 300px; */
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function frmfill(){
+            //Query Selector
+
+            // document.querySelector("img").src="../../Cube.jpg";
+            // document.querySelector("#btn").value="Register";
+            // document.querySelector(".btnLog").value="Login";
+
+            //getElementById method
+
+            document.getElementById("btn").value="Registered";
+            document.getElementById("loginBtn").value="Logged In";
+            document.getElementById("poster").src="../../Cube.jpg";
+            let colour = document.getElementById("clr").style.color="green";
+            colour.style.color = "red";
+        }
+    </script>
+</head>
+<body onload="frmfill()">
+    <div class="container">   
+    <div>
+        <img width="100px" height="100px" style="border: 1;" id="poster" name="poster">
+    </div>
+    <form name="frmReg">
+        <h3>Registration Form</h3>
+        UserName: <input type="text" id="userName">
+        <input type="button" id="btn">
+    </form>
+    <form name="frmLogin">
+        <h3>Login Form</h3>
+        MobileNum: <input type="text">
+        <input type="button" name="btnLog" class="btnLog" id="loginBtn">
+    </form>
+    <p id="clr">Some Text</p>
+</div>
+</body>
+</html>
