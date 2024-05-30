@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output</title>
+    <script>
+        function deleteMsg(){
+            // alert("Deleted");
+        let result =    confirm("Deleted");
+            if(result==true){
+                // alert("success");
+                // document.write("Deleted \n <a href='index.html'>back</a>");
+                // document.querySelector("div").innerText ="\nDeleted successfully";
+                // document.querySelector("div").innerHTML="<br> <h3><font color='red'>Deleted Successfully</font></h3>";
+                document.querySelector("div").outerHTML="<h3>Deleted Successfully";
+            }
+            else{
+                alert("canceled\n delete");
+                // document.querySelector("div").
+            }
+            // document.write("Deleted");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="deleteMsg()">Delete</button>
+    <div></div>
+</body>
+</html>
