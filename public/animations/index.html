@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<style>
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }   
+    .line-1{
+        width: 120px;
+        height: 120px;     
+        border-left: 5px solid rgb(191, 113, 113);
+        animation-direction: normal;
+    }
+    .line-2{
+        width: 80px;
+        height: 80px;    
+        border-left: 5px solid rgb(156, 178, 75);        
+        animation-direction:reverse;        
+        position: absolute;
+        top:263px;
+        left: 565px;
+    }
+    .line-3{
+        width: 50px;
+        height: 50px;  
+        border-left: 5px solid rgb(75, 154, 178);       
+        animation-direction: normal;
+        position: absolute;
+        top:280px;
+        left: 580px;
+    }
+    .line-1, .line-2, .line-3{
+        border-radius: 10px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube | Aditya Music</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            font-family: arial;
+        }
+        .profile{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: arial;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        header span{
+            margin-right: 10px;
+        }
+        .search-bar{
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            border: 1px solid rgb(213, 203, 203);
+            padding: 10px;
+            border-radius: 20px;
+            color: grey;
+        }
+        .search-box{
+            display: flex;
+        }
+        .bi-mic-fill{
+            margin-left: 20px;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgb(235, 235, 232);
+        }
+        .profile-pic span{
+            margin-right: 20px;
+            font-size: 25px;            
+        }
+        .logo{
+            height: 30px;
+        }
+        .bi-justify{
+            font-size: 25px;
+            
+        }
+        nav div span{
+            font-size: 20px;
+            margin-left: 0px;
+        }
+        nav{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        nav div p{
+            font-size: 11px;
+            font-family: arial;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        section{
+            display: flex;
+        }
+        main img{
+            width: 95%;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        article{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            grid-gap: 40px;
+            margin-top: 10px;
+        }
+        .title{
+            font-size: 40px;
+            font-size: bold;
+            font-family: arial;
+        }
+        .bi-check
+        {
+            font-size: 12px;
+            border: 1px solid grey;
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+            margin-left: -7px;
+            
+            background-color: rgb(93, 91, 91);
+            border-radius: 50%;
+            color: white;
+            display: inline-block;
+        }
+        .hidden{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 500px;
+        }
+        .subscribe{
+            background-color: rgba(231, 231, 231, 0.573);
+            border-radius: 20px;
+            display: inline-block;
+            width: 140px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        main nav{
+            margin-right: 0px;
+        }
+        nav span{
+            margin-right: 30px;
+            color: rgb(89, 88, 88);
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .nav-main{
+            color: black;
+            border-bottom: 2px solid black;
+        }
+        .main-nav{
+            border-bottom: 1px solid rgb(188, 188, 188);
+            /* margin-top: 10px; */
+        }
+        .foryou{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .frame{
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 9fr ;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        iframe{
+            border-radius: 10px;
+        }
+        main{
+            height: 500px;
+            overflow: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img src="../Images/youtube-logo.jpg" class="logo">
+        </div>
+        <div>
+            <div class="search-box">
+                <div class="search-bar">
+                    <span>Search</span><span class="bi bi-search"></span>
+                </div><span class="bi bi-mic-fill"></span>
+            </div>
+            
+        </div>
+        <div class="profile-pic">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"></span>
+            <span><img src="../Images/a10.jpg" class="profile"></span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div>
+                <span class="bi bi-house-door"></span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="bi bi-film"></span>
+                <p>Shorts</p>
+            </div>
+            <div>
+                <span class="bi bi-collection-play"></span>
+                <p>Subscriptions</p>
+            </div>
+            <div>
+                <span class="bi bi-play-btn"></span>
+                <p>You</p>
+            </div>
+        </nav>
+        <main>
+            <div><img src="../Images/YouTube-banner2.jpg"></div>
+            <article>
+                <div>
+                    <img src="../Images/Aditya logo.jpg">
+                </div>
+                <div>
+                    <div class="title">Aditya Music <span class="bi bi-check"></span></div> 
+                    <div><br>@adityamusic 31.7M subscribers 23K videos</div>
+                    <div class="hidden"><br>Aditya Music is the most ideal music hub for Telugu music fans, 
+                        providing live music 24x7, top tracks, and</div> 
+                    <div class="subscribe">
+                        <span class="bi bi-bell"> &nbsp; Subscribed &nbsp; <span class="bi bi-chevron-down"></span></span>
+                    </div> 
+                </div>
+            </article>
+            <nav class="main-nav">
+                <span class="nav-main">Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>Podcasts</span>
+                <span>Playlists</span>
+                <span>Community</span>
+                <span class="bi bi-search"></span>
+            </nav>
+            <div class="foryou">For You</div>
+            <div class="frame">
+                <div>
+                    <iframe src="https://www.youtube.com/embed?E7ww8Xowydc" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed?XjCkLAYg2Pk" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed?gh3FyLT7WVg" frameborder="0"></iframe>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

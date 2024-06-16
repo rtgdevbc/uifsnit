@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textbox</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- <input> 
+        just input is enough for input like text box, for restrictions we need to use TYPE attribute like textbox number email password etc.,--> 
+        <!-- <input type="text" name="fName" id="name"> -->
+        <!-- name attribute will be used to submit the value without name attribute we cannot submit the entered values
+        name is key and values enter in the textbox is value  -->
+        <!-- id is unique reference name 
+        class: css class reference name
+        name: it defines reference name mandatory for submitting the value to the server -->
+        <!-- <input type="text" name="fname" id="name" value="Ravi"> -->
+        <!-- value: by default values on page load, we can change the values 
+        some fields will be selected auto in websites using this value attribute like our current location on swiggy bookmyshow etc., -->
+        <!-- <input type="text" readonly value="Ravi" name="fName"> -->
+        <!-- we cannot allow to modify but we can submit the value -->
+        <!-- <input type="text" name="fname" id="name" value="Ravi" disabled> -->
+        <!-- we cannot modify and submit the value -->
+        <!-- <input type="text" size="8"> -->
+        <!-- it is just a size of the box but not the size of the input, we can enter any size of input into this box it is just for visual purpose
+        default size is 20 -->
+        <!-- <input type="text" placeholder="Enter your Name"> -->
+        <!-- it is a watermark value if we enter value we cannot see placeholder 
+        used for screen tips -->
+        <!-- Name: <input type="text" > -->
+        <!-- Email: <input type="email" autofocus> -->
+        <!-- we can use one field to auto focus so that one can start giving input on page load, we cann't give auto focus for all the elements it will work on FIFO base -->
+        <!-- <input type="text" required> -->
+        <!-- it is a validation attribute whether a value is present or not to work this required attribute we have to write inside form element -->
+        <!-- required will not work if we are using novalidation attribute also -->
+        <!-- <input type="text" minlength="2" name="age" required>Age -->
+        <!-- it will validate if min length is reached or not if we entered 0 characters it will not check that because it is for min characters, that task will be done by required attribute after we enter something then minlength will check the condition  -->
+        <!-- <input type="text" name="name" maxlength="5" id="" required>Name -->
+        <!-- it will restrict after max length reaches so no validation required, it is simply restricting the user to enter the values after reaching max length -->
+        <!-- <input type="text" name="search" id="" list="inputtext">
+        <datalist id="inputtext">
+            <option>Name</option>
+            <option>Email</option>
+        </datalist> -->
+        <!-- we can link one text box with one datalist and one datalist can be linked to one text box it is a one to one association
+        options will be listed in the text box as a dropdown and we can enter the values inside the textbox and we can select the values from the dropdown list unlike the real dropdown list -->
+        <!-- inside option we should not use value attribute, otherwise list will not be shown under textbox -->
+        
+    </form>
+</body>
+</html>

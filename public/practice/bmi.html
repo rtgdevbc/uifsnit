@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../../src/bmi.js"></script>
+    <style>
+        .main-box {
+            background-color: white;
+            box-shadow: 2px 2px 2px 2px grey;
+            padding: 20px;
+            color: grey;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div>
+        <div class="main-box">
+            <h1>BMI calculator</h1>
+            <div class="m-2">
+                <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female
+            </div>
+            <div class="m-2">
+                <p class="mb-1">Age (1 year or above *)</p>
+                <input type="text" name="years" id="txtYears" placeholder="Years" size="10">
+            </div>
+            <div class="d-flex">
+                <div class="m-2">
+                    <p class="mb-1">Height*</p>
+                    <input type="text" name="cm" id="txtCm" placeholder="cm" size="10">
+                </div>
+                <div class="m-2">
+                    <p class="mb-1">Weight*</p>
+                    <input type="text" name="kg" id="txtKg" placeholder="kg" size="10">
+                </div>
+            </div>   
+            <button class="btn btn-primary m-2" onclick="bmiCal()">Calculate</button>        
+        </div>
+        <div class="progress mt-4" >
+            <div class="progress-bar bg-info me-1" style="width: 300px;">under weight</div>
+            <div class="progress-bar bg-success me-1" style="width: 300px;">Healthy</div>
+            <div class="progress-bar bg-warn me-1" style="width: 300px;">Over Weight</div>
+            <div class="progress-bar bg-danger me-1" style="width: 300px;">Obess</div>
+        </div>
+        <div class="indicator">
+             <div class="bi bi-triangle-fill"></div>
+             You
+        </div>
+    </div>
+    <p id="yourBMI"></p>
+</body>
+</html>

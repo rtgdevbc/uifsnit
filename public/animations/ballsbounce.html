@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .ball1{
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: orange;
+            margin-right: 5px;
+            animation-name: bounce;
+            animation-duration: 500ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        .ball2{
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: rgb(55, 255, 0);
+            margin-right: 5px;
+            animation-name: bounce;
+            animation-duration: 500ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 300ms;
+            animation-direction: alternate;
+        }
+        .ball3{
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: rgb(0, 225, 255);
+            margin-right: 5px;
+            animation-name: bounce;
+            animation-duration: 500ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 600ms;
+            animation-direction: alternate;
+        }
+        .ball4{
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: rgb(242, 255, 0);
+            margin-right: 5px;
+            animation-name: bounce;
+            animation-duration: 500ms;
+            animation-timing-function:initial;
+            animation-iteration-count: infinite;
+            animation-delay: 900ms;
+            animation-direction: alternate;
+        }
+        @keyframes bounce{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(-40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+    </div>
+</body>
+</html>

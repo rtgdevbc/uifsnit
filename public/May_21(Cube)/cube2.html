@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <style>
+        .mainContainer{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 50vh;
+            left: 50vh;
+            /* transform: translate(50%, 50%); */
+            /* border: 1px solid black; */
+            color: red;
+            font-size: 20px;
+            text-align: center;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color: red;
+            opacity: 0.3;
+            position: absolute;
+            transform: skew(180deg,210deg);
+            color: azure;
+            display: flex;
+            align-items: center;
+            transition-duration: 1s;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color:white;
+            opacity: 0.3;
+            position: absolute;
+            transform: skew(180deg,150deg);
+            left:102px;
+            /* right: 100px; */
+            display: flex;
+            align-items: center;
+            transition-duration: 1s;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color:black;
+            opacity: 0.4;
+            position: absolute;
+            transform: skew(180deg,150deg);
+            right:195px;
+            top: -57px;
+            transition-duration: 1s;
+        }
+        .box3{
+            width: 118px;
+            height: 97px;
+            border: 3px solid black;
+            background-color:green;
+            opacity: 0.5;
+            position: absolute;
+            transform: rotate(330deg) translate(40px, 14px) skew(32deg, 0deg);
+            top: -73px;
+            color: black;
+            display: flex;
+            align-items: center;
+            transition-duration: 1s;
+        }
+        .box-5{
+            width: 118px;
+            height: 97px;
+            border: 3px solid black;
+            background-color:orangered;
+            opacity: 0.3;
+            position: absolute;
+            transform: rotate(330deg) translate(40px, 14px) skew(32deg, 0deg);
+            top: 32px;
+            color: white;
+            transition-duration: 1s;
+        }
+        .box6{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color: yellow;
+            opacity: 0.3;
+            position: absolute;
+            transform: skew(180deg,208deg);
+            color: rgb(27, 219, 219);
+            /* transform: translate(40px); */
+            top: -60px;
+            left: 103px;
+            transition-duration: 1s;
+        }
+        .mainContainer:hover{
+            .box1{
+                transform: skew(180deg,210deg) translate(-80px, 80px);
+                transition-duration: 1s;
+            }
+            .box2{
+                transform: skew(180deg,150deg) translate(150px,100px);
+                transition-duration: 1s;
+            }
+            .box4{
+                transform: skew(180deg,150deg) translate(-150px, -100px);
+                transition-duration: 1s;
+            }
+            .box3{
+                
+                transform: rotate(330deg) translate(50px, -50px) skew(32deg, 0deg);
+            }
+            .box-5{
+                transform: rotate(330deg) translateY(100px) skew(32deg, 0deg);
+            }
+            .box6{
+                
+                transform: skew(180deg,208deg) translate(80px, -80px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="box1">Left-View</div>
+        <div class="box2">Front-View</div>
+        <div class="box3">Top-View</div>
+        <div class="box4">Back-View</div>
+        <div class="box-5">Bottom-View</div>
+        <div class="box6">Right-View</div>
+    </div>
+</body>
+</html>

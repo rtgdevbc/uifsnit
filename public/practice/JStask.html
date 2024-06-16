@@ -1,0 +1,132 @@
+<script>
+//     function FindGreatest(a, b)
+//     {
+//         // if (a > b)
+//         //     {
+//         //         document.write(`a is greater than b`)
+//         //     }
+//         // else if ( a === b)
+//         //     {
+//         //         document.write(`a is equal to b`)
+//         //     }
+//         // else
+//         // {
+//         //     document.write(`b is greater than a`)
+//         // }
+//         if(a === b)
+//         {
+//             document.write(`a=${a} & b=${b} both are equal`);
+//         }
+//         else
+//         {
+//             if(a > b)
+//             {
+//                 document.write(`a=${a} is greater than b=${b}`);
+//             }
+//             else
+//             {
+//                 document.write(`b=${b} is greater than a=${a}`);
+//             }
+//         }
+//     }
+// FindGreatest(10,10);
+
+//2nd task
+
+// function FindGreatest(a,b,c)
+
+// {
+//     if(a===b && b===c)
+//     {
+//         document.write(`a=${a}, b=${b} & c=${c} all three are equal`);
+//     }
+//     else
+//     {
+//         // if(a>b)
+//         // {
+//         //     if(a>c)
+//         //     {
+//         //         document.write(`a=${a} is greater amongn three numbers`);
+//         //     }
+//         //     else
+//         //     {
+//         //         document.write(`c=${c} is greater amongn three numbers`);
+//         //     }
+            
+//         // }
+//         // else
+//         // {
+//         //     document.write(`b=${b} is greater amongn three numbers`);
+//         // }
+//         if(a>b && a>c)
+//         {
+//             document.write("a is greater");
+//         }
+//         else if (b>c)
+//         {
+//             document.write("b is greater")
+
+//         }
+//         else 
+//         {
+//             document.write("c is greater");
+//         }
+        
+//     }
+// }
+// FindGreatest(90300,200000,10000);
+
+//3rd task triangle
+
+function findTriangleType(a, b, c)
+{
+    if(a===b)
+    {
+        if(a==c)
+        {
+            document.write("Equalateral Triangle");
+        }
+        else
+        {
+            document.write("Isosceles Triangle");
+        }
+    }
+    else
+    {
+        if(a===c)
+        {
+            document.write("Isosceles Triangle");
+        }
+        else if(b===c)
+        {
+            document.write("Isosceles Triangle");
+        }
+        else
+        {
+            document.write("Scalane Triangle");
+        }
+    }
+}
+// findTriangleType(12,12,12);
+</script>
+
+<script>
+    function findTriangleType(side1,side2,side3)
+    {
+        if(side1===side2 && side1===side3)
+        {
+            document.write("Equilateral Triangle <br>");
+        }
+        else if(side1===side2 || side2===side3 || side1===side3)
+        {
+            document.write("Isosceles Triangle <br>");
+        }
+        else
+        {
+            document.write("Scalene Triangle <br>");
+        }
+    }
+    findTriangleType(1,1,1);
+    findTriangleType(2,1,2);
+    findTriangleType(1,2,3);  
+</script>

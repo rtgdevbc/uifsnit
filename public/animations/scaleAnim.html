@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Animation</title>
+    <style>
+        .circle-1{
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            /* background-color: orange; */
+            /* border: 5px solid orange; */
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-timing-function:initial;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-2{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            /* background-color: orange; */
+            /* border: 5px solid rgb(0, 26, 255 */
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-timing-function:initial;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 300ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-3{
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            /* background-color: orange; */
+            /* border: 5px solid rgb(0, 26, 255); */
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-timing-function:initial;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 500ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-4{
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            /* background-color: orange; */
+            /* border: 5px solid rgb(0, 26, 255); */
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-timing-function:initial;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 700ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-5{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            /* background-color: orange; */
+            /* border: 5px solid rgb(230, 0, 255); */
+            animation-name: zoom;
+            animation-duration: 1s;
+            animation-timing-function:initial;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-delay: 900ms;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @keyframes zoom{
+            0%{
+                transform: scale(0.9);
+                border:2px solid black;
+            }
+            20%{
+                border:2px solid rgb(18, 16, 15);
+            }
+            40%{
+                border:2px solid rgb(21, 21, 19);
+            }
+            60%{
+                
+                border:2px solid rgb(234, 234, 229);
+            }
+            80%{
+                border:2px solid rgb(228, 228, 221);
+            }
+            100%{
+                transform: scale(1);
+                border: 2px solid white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="circle-1">
+            <div class="circle-2">
+                <div class="circle-3">
+                    <div class="circle-4">
+                        <div class="circle-5"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

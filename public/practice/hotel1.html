@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../practice/hotel.js" type="text/javascript"></script>
+    <style>
+        /* .shade{
+            background-color: rgba(0,0,0, 0.7);
+            z-index: 1;
+            position: relative;
+        }
+        img:hover{
+            position:absolute;
+            z-index: 0;
+        } */
+    </style>
+</head>
+<body class="container-fluid">
+    <header class="bg-warning rounded">
+        <h1 class="text-white m-2 p-2 text-center">Hotel Registration</h1>
+    </header>
+    <section >
+        <div class="bg-warning rounded">
+            <h4 class="text-white m-2 p-2 text-center">Customer Details</h4>
+            <div class="w-100 d-flex justify-content-center">
+                <input type="text" placeholder="Customer Name" class="form-control m-2 p-2"> <input type="date" class="form-control m-2 p-2">
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <input type="number" placeholder="No of Days" class="form-control m-2 p-2">
+                <input type="number" placeholder="No of Persons" class="form-control m-2 p-2">
+            </div>
+        </div>
+        <div class="bg-warning mt-2 p-2 text-center text-white rounded">
+            <h4>Select Room Type</h4>
+            <div class="row">
+                <div class="col shade">
+                    <img src="../Images/delux-room.jpg" class="w-100 rounded-3" height="300">
+                  
+                    <input type="radio" value="Delux" name="room" id="Delux" class="form-check-input"><label class="text-dark">Delux-Room</label>
+                </div>
+                <div class="col shade">
+                    <img src="../Images/Suite_room.jpg" class="w-100 rounded-3" height="300">
+                    <input type="radio" value="Suite" name="room" id="suite" class="form-check-input"> <label class="text-dark">Suite-Room</label>
+                </div>
+            </div>
+        </div>
+        <div class="bg-warning mt-2 p-2 text-center text-white rounded">
+            <h4>Select Amenities</h4>
+            <div class="row">
+                <div class="col shade">
+                    <img src="../Images/AC-Image.jpg" class="w-100 rounded-3" height="300">
+                    <input type="checkbox" value="AC" id="ac" class="form-check-input"> <label class="text-dark">Delux-Room</label>
+                </div>
+                <div class="col shade">
+                    <img src="../Images/door-lock.jpg" class="w-100 rounded-3" height="300">
+                    <input type="checkbox" value="Locker" id="locker" class="form-check-input"> <label class="text-dark">Suite-Room</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex bg-warning rounded justify-content-center mt-2">
+            <div class="mt-2">
+                <h4>Advance amount</h4>
+            </div>
+            <span class="text-danger mt-2">*</span> 
+            <div>
+                <input type="number" class="mt-2 form-control w-100 p-1">
+            </div>
+             <button class="btn btn-success w-50 m-3"><h5 class="text-white">REGISTER</h5></button>
+        </div>
+    </section>
+</body>
+</html>

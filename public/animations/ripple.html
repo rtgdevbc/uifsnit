@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripple Animation</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dotted-circle{
+            border: 20px dotted blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            position: absolute;
+            animation-name: spin;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            top: 250px;
+            left: 600px;
+        }
+        .half-circle{
+            border-bottom: 20px solid white;
+            border-left: 20px solid blue;
+            border-top: 20px solid blue;
+            border-right: 20px solid blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            position: absolute;
+            animation-name: spin;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            top: 250px;
+            left: 600px;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .re-pos{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="rel-pos">
+        <div class="half-circle"></div>
+        <div class="dotted-circle"></div>
+    </div>
+</body>
+</html>

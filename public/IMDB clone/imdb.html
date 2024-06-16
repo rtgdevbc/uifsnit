@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .nav-bar{
+            background-color: black;
+            color: white;
+            font-family: arial;
+            padding: 10px;
+            border-radius: 5px;
+            padding-left: 100px;
+            font-weight: bold;
+        }
+        .search-bar{
+            display: inline-block;
+            /* width: 500px; */
+            background-color: white;
+            color: grey;
+            height: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        .searchimdb{
+            border-left: 1px solid black;
+            padding-left: 10px;
+            padding-right: 300px;
+            font-weight: lighter;
+        }
+        .imdb{
+            display: inline-block;
+            width: 50px;
+            background-color: rgb(223, 185, 17);
+            padding: 5px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .pro{
+            color: rgb(42, 209, 224);
+        }
+        .imdbpro{
+            font-weight: bold;
+            margin-right: 15px;
+            border-right: 1px solid white;
+            padding-right:15px;
+        }
+        .bi-bookmark-plus-fill{
+            font-size: 20px;
+        }
+        .watchlist{
+            padding-right: 15px;
+        }
+        .signin{
+            font-size: 13px;
+            padding-right: 15px;
+        }
+        .bi-caret-down-fill{
+            font-size: 10px;
+            padding-right: 5px;
+        }
+        /* .bi-list{
+            font-size: 18px;
+        } */
+         
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <span class="imdb">IMDb</span>
+            <span class="bi bi-list"> </span><span>Menu</span>
+            <span class="search-bar">           
+                <span>All <span class="bi bi-caret-down-fill"></span> 
+                    <span class="search">
+                        <span class="searchimdb">Search IMDb</span>  <span class="bi bi-search"></span>
+                    </span>
+                </span>
+            </span>
+            <span class="imdbpro">IMDb<span class="pro">Pro</span></span>
+            <span class="bi bi-bookmark-plus-fill"></span><span class="watchlist"> &nbsp;Watchlist</span> 
+            <span class="signin">Sign In</span>
+            <span>EN <span class="bi bi-caret-down-fill"></span></span>
+        </div>
+    </header>
+</body>
+</html>

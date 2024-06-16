@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperLinks</title>
+    <style>
+        /* nav span{
+            margin: 40px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        img:target{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+        h3:target{
+            color: rgb(30, 247, 30);
+            background-color: rgb(205, 152, 152);
+        } */
+        *{
+            font-family: arial;
+        }
+        nav a{
+            text-decoration: none;
+            margin-right: 60px;
+        }
+        main{
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        main div{
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px grey;
+            margin-right: 30px;
+            padding: 20px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .box:target{
+            /* width: 100px;
+            height: 100px; */
+            color: white;
+            background-color: black;
+        }   
+    </style>
+</head>
+<body>
+    <!-- <h3 id="top">Top</h3>
+    <nav>
+        <span><a href="#home">Home</a></span>
+        <span><a href="#contact">Contact</a></span>
+        <span><a href="#services">Services</a></span>
+    </nav> 
+    <main>
+        <img src="../Images/a1.jpg" id="home">
+        <img src="../Images/a2.jpg" id="contact">
+        <img src="../Images/a4.jpg" id="services">
+    </main>
+    <a href="#top">Back to top</a> -->
+    <nav>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JS</a>
+    </nav>
+    <main >
+        <div class="box" id="html">
+            <h2>HTML</h2>
+            <p>For showing content</p>
+        </div>
+        <div class="box" id="css">
+            <h2>CSS</h2>
+            <p>For designing</p>
+        </div>
+        <div class="box" id="js">
+            <h2>JS</h2>
+            <p>For functioning</p>
+        </div>
+    </main>
+</body>
+</html>
