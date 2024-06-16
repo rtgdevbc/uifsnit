@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./src/scripts/hotel.js" type="text/javascript"></script>
+</head>
+<body class="container-fluid">
+    <header>
+        <h2 class="text-center text-primary m-2 p-2 border border-primary rounded">Hotel Registration Form</h2>
+    </header>
+    <section>
+        <div>
+            <h3 class="text-center text-white bg-primary p-2 rounded m-2">Customer Info</h3>
+        </div>
+        <!-- Customer Details -->
+         <div class="row border border-primary rounded m-2 p-2 text-center text-primary">
+            
+                
+                <div class="col">
+                    <br><span>Customer Name</span>
+                    <input type="text" class="form-control text-center"  placeholder="Text" id="txtName"><br>
+                    <span class="">Check in Date</span>
+                    <input type="date" class="form-control text-center"  id="txtDate" placeholder="Check in Date"> <br>
+                    <span class="">Total No of Days</span>
+                    <input type="number" class="form-control text-center"  id="txtDays" placeholder="Number"><br>
+                    <span class="">Total No of Persons</span>
+                    <input type="number" class="form-control text-center" id="txtPersons" placeholder="Number"><br>
+                </div>
+            
+         </div>
+         <div>
+            <h3 class="text-center text-white bg-primary m-2 p-2 rounded">Select Room Type</h3>
+         </div>
+         <div>
+            <div class="row border border-primary rounded m-2 p-2 text-center">
+                <div class="col w-100">
+                    <img src="../Images/delux-room.jpg" width="200" height="200" class="border border-dark rounded-3"> <br>
+                    <input type="radio" class="form-check-input" name="room" id="roomType1" value="Delux"> <label> Delux Room &#8377; 2500/- </label>
+                </div>
+                <div class="col w-100">
+                    <img src="../Images/Suite_room.jpg" width="200" height="200" class="border border-dark rounded-3"> <br>
+                    <input type="radio" class="form-check-input" name="room" id="roomType2" value="Suite"> <label> Suite Room &#8377; 4000/-</label>
+                </div>
+            </div>
+         </div>
+         <div>
+            <h3 class="text-center text-white bg-primary m-2 p-2 rounded">Select Amenities</h3>
+         </div>
+         <div class="row border border-primary rounded m-2 p-2 text-center">
+            <div class="col w-100">
+                <img src="../Images/AC-Image.jpg" width="200" height="200" class="border border-dark rounded-3"> <br>
+                <input type="checkbox" class="form-check-input" id="Ams1" value="AC"> <label> A/C &#8377; 1000/-</label>
+            </div>
+            <div class="col w-100">
+                <img src="../Images/door-lock.jpg" width="200" height="200" class="border border-dark rounded-3"> <br>
+                <input type="checkbox" class="form-check-input" id="Ams2" value="Locker"> <label> Locker &#8377; 300/-</label>
+            </div>
+         </div>
+         <div>
+            <h3 class="text-center text-white bg-primary m-2 p-2 rounded">Advance Amount</h3>
+            
+         </div>
+         <div class="text-center m-2 p-2 border border-primary rounded">
+            <span class="text-dark">Advance Amount</span> <span class="text-danger">*</span>
+            <input type="number" class="border border-primary rounded" name="" id="Advance"><br>
+            <dl>
+                <dt id="adv" class="text-danger"></dt>
+            </dl>
+         </div>
+         <div class="text-center">
+            <button onclick="Summary()" data-bs-target="#summary" data-bs-toggle="modal" class="btn btn-success m-2">Register</button>
+         </div>
+         <div class="modal fade" id="summary">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Check Details</h2>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <dl>
+                                    <dt class="mb-2">Customer Name :</dt>
+                                    
+                                    <dt class="mb-2">Check in Date :</dt>
+                                    
+                                    <dt class="mb-2">Total No of Days :</dt>
+                                    
+                                    <dt class="mb-2">Total No of Persons :</dt>
+                                    
+                                    <dt class="mb-2">Room Type :</dt>
+                                    
+                                    <dt class="mb-2">Amenities :</dt> 
+                                    
+                                    <dt class="mb-2">Advance Amount :</dt> 
+                                    
+                                    <dt class="mb-2">Balance Amount :</dt>
+                                    
+                                </dl>
+                            </div>
+                            <div class="col">
+                                <dl>
+                                    <dd id="lblName"></dd>
+                                    <dd id="lblDate"></dd>
+                                    <dd id="lblDays"></dd>
+                                    <dd id="lblPersons"></dd>
+                                    <dd id="lblRoom"></dd>
+                                    <dd id="lblAmenities"></dd>
+                                    <dd id="advamount"></dd>
+                                    <dd id="blnamount"></dd> 
+                                </dl>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
